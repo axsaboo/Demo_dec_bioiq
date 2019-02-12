@@ -33,11 +33,10 @@ ui <- fluidPage(theme = shinytheme("cerulean"),
     mainPanel(
       
       # Output: Histogram ----
-      textOutput("result"),
-      hr(),
-      textOutput("pp"),
-      hr(),
-      hr(),
+      h1("AMM Drug Utilization"),
+      h2(textOutput("result")),
+      h2(textOutput("pp")),
+      #hr(),
       #hr(),
       #tableOutput("table"),
       dataTableOutput("table"),

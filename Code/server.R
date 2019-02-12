@@ -41,18 +41,18 @@ server <- function(input, output) {
  output$graph <- renderPlot({
    ggplot(subset(g(),State %in% c(input$st)), aes(Q, Sum, group = 4)) +
      geom_point() +
-     geom_line() +
+     geom_line(size = 1.5,color = "#ddb397") +
      # geom_area(fill = 'cyan') +
-     labs(x = "2017 Quarter", y = input$pp, 
+     labs(x = "2017 Quarters", y = input$pp, 
           title = paste0("Total Quartely ", input$pp))  +
-     theme(text = element_text(family = NULL, color = "#444444")
-           ,panel.background = element_rect(fill = '#444B5A')
-           ,panel.grid.minor = element_line(color = '#4d5566')
-           ,panel.grid.major = element_line(color = '#586174')
-           ,plot.title = element_text(size = 28)
-           ,axis.title = element_text(size = 18, color = '#555555')
-           ,axis.title.y = element_text(vjust = 1, angle = 0)
-           ,axis.title.x = element_text(hjust = 0)
+     theme(text = element_text(family = NULL, color = "#6aa7ec")
+           ,panel.background = element_rect(fill = '#e1f1f2')
+           ,panel.grid.minor = element_line(color = '#6aa7ec')
+           ,panel.grid.major = element_line(color = '#6aa7ec')
+           ,plot.title = element_text(hjust = .5, size = 18)
+           ,axis.title = element_text(size = 18, color = '#6aa7ec')
+           ,axis.title.y = element_text(vjust = 1.5, angle = 90)
+           ,axis.title.x = element_text(hjust = .5)
      )
   
  })
