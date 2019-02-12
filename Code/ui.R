@@ -1,13 +1,7 @@
 ui <- fluidPage(theme = shinytheme("cerulean"),
   
   
-  
-  tags$head(
-    # Include our custom CSS
-    includeCSS("styles.css"),
-    includeScript("gomap.js")
-  ),
-  setBackgroundImage(src = "image/wp1848587.jpg"),
+  setBackgroundImage(src = "https://image.freepik.com/free-vector/abstract-blue-bright-background-health-care-icon-pattern-medical-innovation-concept_44392-178.jpg"),
   # App title ----
   titlePanel("Hello, Health Plan Managers"),
   
