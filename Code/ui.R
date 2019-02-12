@@ -1,7 +1,8 @@
-ui <- fluidPage(theme = shinytheme("cerulean"),
+ui <- fluidPage(
+  theme = shinythemes::shinytheme("cerulean"),
   
   
-  setBackgroundImage(src = "https://image.freepik.com/free-vector/abstract-blue-bright-background-health-care-icon-pattern-medical-innovation-concept_44392-178.jpg"),
+  shinyWidgets::setBackgroundImage(src = "https://image.freepik.com/free-vector/abstract-blue-bright-background-health-care-icon-pattern-medical-innovation-concept_44392-178.jpg"),
   # App title ----
   titlePanel("Hello, Health Plan Managers"),
   
@@ -39,7 +40,7 @@ ui <- fluidPage(theme = shinytheme("cerulean"),
       #hr(),
       #hr(),
       #tableOutput("table"),
-      dataTableOutput("table"),
+      DT::dataTableOutput("table"),
       hr(),
       hr(),
       plotOutput("graph")

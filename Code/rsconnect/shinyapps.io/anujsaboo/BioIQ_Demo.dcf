@@ -1,0 +1,12 @@
+name: BioIQ_Demo
+title: BioIQ_Demo
+username:
+account: anujsaboo
+server: shinyapps.io
+hostUrl: https://api.shinyapps.io/v1
+appId: 709731
+bundleId: 1870948
+url: https://anujsaboo.shinyapps.io/BioIQ_Demo/
+when: 1549954564.73258
+asMultiple: FALSE
+asStatic: FALSE

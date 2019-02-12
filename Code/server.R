@@ -1,11 +1,12 @@
-library(leaflet)
+library(shinythemes)
 library(RColorBrewer)
 library(scales)
 library(lattice)
 library(dplyr)
 library(DT)
 library(shinyWidgets)
-library(shinythemes)
+library(ggplot2)
+
 
 
 # Define server logic required to draw a histogram ----
