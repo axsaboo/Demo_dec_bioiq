@@ -1,4 +1,6 @@
 ui <- fluidPage(
+  
+  tags$head(includeScript("google-analytics.js")),
   theme = shinythemes::shinytheme("cerulean"),
   
   
