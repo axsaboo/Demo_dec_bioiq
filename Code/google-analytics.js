@@ -6,4 +6,16 @@
   gtag('js', new Date());
 
   gtag('config', 'UA-135503939-1');
+
+	$(document).on('st', 'select', function(e) {
+    	ga('send', 'event', 'widget', 'select data', $(e.currentTarget).val());
+  	});
+
+	$(document).on('pp', 'select', function(e) {
+    	ga('send', 'event', 'widget', 'select data', $(e.currentTarget).val());
+  	});
+  
+  	$(document).on('go', 'button', function() {
+    	ga('send', 'event', 'button', 'plot data');
+  	});
 </script>
